@@ -2,7 +2,6 @@ package morecapacitor.recipe.sliceandsplice;
 
 import crazypants.enderio.base.recipe.*;
 import crazypants.enderio.base.recipe.slicensplice.SliceAndSpliceRecipeManager;
-import crazypants.enderio.base.recipe.vat.VatRecipeManager;
 import morecapacitor.MoreCapacitor;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;

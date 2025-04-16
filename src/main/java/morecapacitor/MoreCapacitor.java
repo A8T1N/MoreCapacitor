@@ -1,6 +1,5 @@
 package morecapacitor;
 
-import crazypants.enderio.base.EnderIOTab;
 import morecapacitor.block.BlockSingularityAlloy;
 import morecapacitor.capacitor.ItemCreativeCapacitor;
 import morecapacitor.capacitor.ItemSingularityCapacitor;
@@ -36,18 +35,21 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Objects;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]",dependencies = "required-after:enderioendergy;required-after:enderio")
+@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:enderioendergy;required-after:enderio")
 public class MoreCapacitor {
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
-    public static CreativeTabs materialsTab;
     public static final Item CAPACITOR_SINGULARITY = new ItemSingularityCapacitor();
     public static final Item SINGULARITY_ALLOY_INGOT = new ItemSingularityAlloyIngot();
     public static final Item SINGULARITY_ALLOY_NUGGET = new ItemSingularityAlloyNugget();
-
     public static final Block SINGULARITY_ALLOY_BLOCK = new BlockSingularityAlloy();
     public static final Item ITEM_SINGULARITY_ALLOY_BLOCK = new ItemBlock(SINGULARITY_ALLOY_BLOCK).setRegistryName(SINGULARITY_ALLOY_BLOCK.getRegistryName());
-
     public static final Item CREATIVE_CAPACITOR = new ItemCreativeCapacitor();
+    public static CreativeTabs materialsTab;
+
+    public static void registerItem(Item item, String name, IForgeRegistry<Item> registry) {
+        registry.register(item.setRegistryName(name).setTranslationKey(Objects.requireNonNull(item.getRegistryName()).toString()));
+//                .setCreativeTab(EnderIOTab.tabEnderIOMaterials));
+    }
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -73,13 +75,6 @@ public class MoreCapacitor {
                 CREATIVE_CAPACITOR
         );
     }
-
-    public static void registerItem(Item item, String name, IForgeRegistry<Item> registry) {
-        // Ender IOのクリエイティブタブを適用
-        registry.register(item.setRegistryName(name).setTranslationKey(Objects.requireNonNull(item.getRegistryName()).toString()));
-//                .setCreativeTab(EnderIOTab.tabEnderIOMaterials));
-    }
-
 
     @SubscribeEvent
     // Register blocks here (Remove if not needed)

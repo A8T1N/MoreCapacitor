@@ -9,7 +9,8 @@ import javax.annotation.Nonnull;
 public class CreativeCapacitorData implements ICapacitorData {
 
     public static final CreativeCapacitorData instance = new CreativeCapacitorData();
-        public static float globalLevel = Float.MAX_VALUE;
+    public static float globalLevel = Float.MAX_VALUE;
+
     private CreativeCapacitorData() {
     }
 
