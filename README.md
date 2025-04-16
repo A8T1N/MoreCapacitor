@@ -1,6 +1,6 @@
 # MoreCapacitor
 
-*A mod that adds **HighTier Capacitors** to Ender IO.*  
+*A mod that adds **High Tier Capacitors** to Ender IO.*  
 Minecraft Version: **1.12.2**
 
 
