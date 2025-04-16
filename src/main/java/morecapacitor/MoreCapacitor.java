@@ -44,11 +44,9 @@ public class MoreCapacitor {
     public static final Block SINGULARITY_ALLOY_BLOCK = new BlockSingularityAlloy();
     public static final Item ITEM_SINGULARITY_ALLOY_BLOCK = new ItemBlock(SINGULARITY_ALLOY_BLOCK).setRegistryName(SINGULARITY_ALLOY_BLOCK.getRegistryName());
     public static final Item CREATIVE_CAPACITOR = new ItemCreativeCapacitor();
-    public static CreativeTabs materialsTab;
 
     public static void registerItem(Item item, String name, IForgeRegistry<Item> registry) {
         registry.register(item.setRegistryName(name).setTranslationKey(Objects.requireNonNull(item.getRegistryName()).toString()));
-//                .setCreativeTab(EnderIOTab.tabEnderIOMaterials));
     }
 
     @EventHandler
