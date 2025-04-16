@@ -3,7 +3,6 @@
 *A mod that adds **HighTier Capacitors** to Ender IO.*  
 Minecraft Version: **1.12.2**
 
----
 
 ## Dependencies
 
