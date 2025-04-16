@@ -26,7 +26,7 @@ public class ItemCreativeCapacitor extends Item {
     public ItemCreativeCapacitor() {
         this.setRegistryName("capacitor_creative");
         this.setTranslationKey(Tags.MODID + ".capacitor_creative");
-//        this.setCreativeTab(EnderIOTab.tabEnderIOMaterials);
+        this.setCreativeTab(EnderIOTab.tabEnderIOMaterials);
     }
 
     @Nullable
