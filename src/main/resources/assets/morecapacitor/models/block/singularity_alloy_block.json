@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "morecapacitor:blocks/singularity_alloy_block"
+  }
+}

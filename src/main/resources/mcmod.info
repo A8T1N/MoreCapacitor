@@ -1,0 +1,12 @@
+[{
+    "modid": "${modid}",
+    "name": "${modname}",
+    "description": "I want to feel The Singularity!!",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "logoFile": "assets/morecapacitor/textures/items/capacitor_singularity.png",
+    "url": "",
+    "authorList": ["A8"],
+    "credits": "Texture support by インゴット",
+    "dependencies": []
+}]
