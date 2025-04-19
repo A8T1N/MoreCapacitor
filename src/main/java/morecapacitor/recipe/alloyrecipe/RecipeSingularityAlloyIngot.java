@@ -32,7 +32,7 @@ public class RecipeSingularityAlloyIngot {
                 outputItem,
                 500000,
                 0.5f,
-                RecipeLevel.ADVANCED
+                RecipeLevel.IGNORE
         );
     }
 }

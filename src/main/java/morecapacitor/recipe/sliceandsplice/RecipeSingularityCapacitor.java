@@ -34,7 +34,7 @@ public class RecipeSingularityCapacitor {
                 outputs,
                 500000,
                 RecipeBonusType.NONE,
-                RecipeLevel.ADVANCED
+                RecipeLevel.IGNORE
         );
 
         SliceAndSpliceRecipeManager.getInstance().addRecipe(recipe);
