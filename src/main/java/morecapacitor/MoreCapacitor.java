@@ -3,13 +3,13 @@ package morecapacitor;
 import morecapacitor.block.BlockSingularityAlloy;
 import morecapacitor.capacitor.ItemCreativeCapacitor;
 import morecapacitor.capacitor.ItemSingularityCapacitor;
+import morecapacitor.config.MoreCapacitorConfig;
 import morecapacitor.item.ItemSingularityAlloyIngot;
 import morecapacitor.item.ItemSingularityAlloyNugget;
 import morecapacitor.recipe.alloyrecipe.RecipeSingularityAlloyIngot;
 import morecapacitor.recipe.sliceandsplice.RecipeSingularityCapacitor;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -54,6 +54,8 @@ public class MoreCapacitor {
         // register to the event bus so that we can listen to events
         MinecraftForge.EVENT_BUS.register(this);
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
+
+        MoreCapacitorConfig.init(event.getSuggestedConfigurationFile());
     }
 
     @SubscribeEvent
