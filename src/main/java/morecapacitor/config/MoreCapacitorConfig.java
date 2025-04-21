@@ -16,7 +16,7 @@ public class MoreCapacitorConfig {
                     "LegacyRecipeSupport",
                     "recipes",
                     false,
-                    "To support Legacy recipes, the Singularity Alloy crafting material is changed from DoubleCompressedInfinityDustBlock to ReinforcedObsidian."
+                    "To support legacy recipes, setting this to true changes the Singularity Alloy crafting material from Double Compressed Infinity Dust Block to Reinforced Obsidian."
             );
         } catch (Exception e) {
             System.err.println("Error loading MoreCapacitor config: " + e.getMessage());
