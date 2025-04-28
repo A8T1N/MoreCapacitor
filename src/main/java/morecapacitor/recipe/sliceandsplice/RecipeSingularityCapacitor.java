@@ -26,7 +26,7 @@ public class RecipeSingularityCapacitor {
                 new RecipeInput(precientPowder, true),
         };
 
-        ItemStack outputItem = new ItemStack(MoreCapacitor.CAPACITOR_SINGULARITY);
+        ItemStack outputItem = new ItemStack(MoreCapacitor.SINGULARITY_CAPACITOR);
         RecipeOutput[] outputs = new RecipeOutput[]{new RecipeOutput(outputItem, 1.0f, 0.5f)};
 
         Recipe recipe = new Recipe(

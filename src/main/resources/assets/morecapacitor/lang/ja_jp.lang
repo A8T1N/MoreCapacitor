@@ -3,6 +3,7 @@ item.morecapacitor.capacitor_singularity.name=シンギュラリティコンデ�
 tile.morecapacitor.singularity_alloy_block.name=シンギュラリティ合金ブロック
 item.morecapacitor.singularity_alloy_ingot.name=シンギュラリティ合金インゴット
 item.morecapacitor.singularity_alloy_nugget.name=シンギュラリティ合金の塊
+item.morecapacitor.singularity_alloy_ball.name=シンギュラリティ合金の粉砕用ボール
 
 tile.morecapacitor.singularity_alloy_block.tooltip=ビーコンの基礎として使用可能。
 jei.morecapacitor.singularity_alloy_block.info=§f§lシンギュラリティ合金ブロック\n\nビーコンの基礎として使用可能。

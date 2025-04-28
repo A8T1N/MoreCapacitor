@@ -1,5 +1,7 @@
 package morecapacitor;
 
+import morecapacitor.ball.IMCHandler;
+import morecapacitor.ball.ItemGrindingBallSingularity;
 import morecapacitor.block.BlockSingularityAlloy;
 import morecapacitor.capacitor.ItemCreativeCapacitor;
 import morecapacitor.capacitor.ItemSingularityCapacitor;
@@ -38,12 +40,14 @@ import java.util.Objects;
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:enderioendergy;required-after:enderio")
 public class MoreCapacitor {
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
-    public static final Item CAPACITOR_SINGULARITY = new ItemSingularityCapacitor();
+    public static final Item SINGULARITY_CAPACITOR = new ItemSingularityCapacitor();
     public static final Item SINGULARITY_ALLOY_INGOT = new ItemSingularityAlloyIngot();
     public static final Item SINGULARITY_ALLOY_NUGGET = new ItemSingularityAlloyNugget();
     public static final Block SINGULARITY_ALLOY_BLOCK = new BlockSingularityAlloy();
     public static final Item ITEM_SINGULARITY_ALLOY_BLOCK = new ItemBlock(SINGULARITY_ALLOY_BLOCK).setRegistryName(SINGULARITY_ALLOY_BLOCK.getRegistryName());
     public static final Item CREATIVE_CAPACITOR = new ItemCreativeCapacitor();
+    public static final Item SINGULARITY_ALLOY_BALL = new ItemGrindingBallSingularity();
+
 
     public static void registerItem(Item item, String name, IForgeRegistry<Item> registry) {
         registry.register(item.setRegistryName(name).setTranslationKey(Objects.requireNonNull(item.getRegistryName()).toString()));
@@ -55,6 +59,7 @@ public class MoreCapacitor {
         MinecraftForge.EVENT_BUS.register(this);
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
         MoreCapacitorConfig.init(event.getSuggestedConfigurationFile());
+
     }
 
     @SubscribeEvent
@@ -70,8 +75,9 @@ public class MoreCapacitor {
                 ITEM_SINGULARITY_ALLOY_BLOCK,
                 SINGULARITY_ALLOY_INGOT,
                 SINGULARITY_ALLOY_NUGGET,
-                CAPACITOR_SINGULARITY,
-                CREATIVE_CAPACITOR
+                SINGULARITY_CAPACITOR,
+                CREATIVE_CAPACITOR,
+                SINGULARITY_ALLOY_BALL
         );
     }
 
@@ -92,6 +98,9 @@ public class MoreCapacitor {
         OreDictionary.registerOre("ingotSingularityAlloy", new ItemStack(SINGULARITY_ALLOY_INGOT));
         OreDictionary.registerOre("nuggetSingularityAlloy", new ItemStack(SINGULARITY_ALLOY_NUGGET));
         OreDictionary.registerOre("blockSingularityAlloy", new ItemStack(SINGULARITY_ALLOY_BLOCK));
+        OreDictionary.registerOre("ballSingularityAlloy", new ItemStack(SINGULARITY_ALLOY_BALL));
+
+        IMCHandler.sendIMCs();
     }
 
     @EventHandler
@@ -110,7 +119,8 @@ public class MoreCapacitor {
         ModelLoader.setCustomModelResourceLocation(ITEM_SINGULARITY_ALLOY_BLOCK, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "singularity_alloy_block"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(SINGULARITY_ALLOY_INGOT, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "singularity_alloy_ingot"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(SINGULARITY_ALLOY_NUGGET, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "singularity_alloy_nugget"), "inventory"));
-        ModelLoader.setCustomModelResourceLocation(CAPACITOR_SINGULARITY, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "capacitor_singularity"), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(SINGULARITY_CAPACITOR, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "capacitor_singularity"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(CREATIVE_CAPACITOR, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "capacitor_creative"), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(SINGULARITY_ALLOY_BALL, 0, new ModelResourceLocation(new ResourceLocation(Tags.MODID, "singularity_alloy_ball"), "inventory"));
     }
 }

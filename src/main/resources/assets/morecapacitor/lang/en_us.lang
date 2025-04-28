@@ -3,6 +3,7 @@ item.morecapacitor.capacitor_singularity.name=Singularity Capacitor
 tile.morecapacitor.singularity_alloy_block.name=Singularity Alloy Block
 item.morecapacitor.singularity_alloy_ingot.name=Singularity Alloy Ingot
 item.morecapacitor.singularity_alloy_nugget.name=Singularity Alloy Nugget
+item.morecapacitor.singularity_alloy_ball.name=Singularity Alloy Grinding Ball
 
 tile.morecapacitor.singularity_alloy_block.tooltip=Can be used as beacon base
 jei.morecapacitor.singularity_alloy_block.info=§f§lSingularity Alloy Block\n\nCan be used as beacon base
