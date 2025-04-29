@@ -1,16 +1,13 @@
 package morecapacitor.jei;
 
-import crazypants.enderio.base.lang.Lang;
-import crazypants.enderio.base.recipe.sagmill.GrindingBall;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.JEIPlugin;
 import morecapacitor.MoreCapacitor;
-import morecapacitor.ball.ItemSingularityGrindingBall;
 import net.minecraft.item.ItemStack;
 
 @JEIPlugin
-public class ItemSingularityGrindingBallInfo  implements IModPlugin {
+public class ItemSingularityGrindingBallInfo implements IModPlugin {
     @Override
     public void register(IModRegistry registry) {
         // Singularity Alloy Blockにビーコン基盤の情報を追加

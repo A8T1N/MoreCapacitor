@@ -1,7 +1,9 @@
 package morecapacitor;
 
 import com.enderio.core.common.util.NNList;
-import crazypants.enderio.base.recipe.*;
+import crazypants.enderio.base.recipe.IManyToOneRecipe;
+import crazypants.enderio.base.recipe.IRecipeInput;
+import crazypants.enderio.base.recipe.RecipeLevel;
 import crazypants.enderio.base.recipe.alloysmelter.AlloyRecipeManager;
 import net.minecraft.item.ItemStack;
 

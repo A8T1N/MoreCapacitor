@@ -6,7 +6,10 @@
     "NNN"
   ],
   "key": {
-    "N": { "type": "forge:ore_dict", "ore": "nuggetSingularityAlloy" }
+    "N": {
+      "type": "forge:ore_dict",
+      "ore": "nuggetSingularityAlloy"
+    }
   },
   "result": {
     "item": "morecapacitor:singularity_alloy_ingot"

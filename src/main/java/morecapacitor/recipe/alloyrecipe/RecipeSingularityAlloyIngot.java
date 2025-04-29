@@ -15,9 +15,9 @@ import net.minecraft.item.ItemStack;
 public class RecipeSingularityAlloyIngot {
     public static void registerRecipes() {
         ItemStack doubleCompressedInfinityDustBlock = new ItemStack(Item.getByNameOrId("enderio:block_infinity"), 2, 2);
-        ItemStack reinforcedObsidianBlock = new ItemStack(Item.getByNameOrId("enderio:block_reinforced_obsidian"),2);
+        ItemStack reinforcedObsidianBlock = new ItemStack(Item.getByNameOrId("enderio:block_reinforced_obsidian"), 2);
         ItemStack ingotStellar = new ItemStack(Item.getByNameOrId("enderio:item_alloy_endergy_ingot"), 2, 3);
-        ItemStack enderEye = new ItemStack(Items.ENDER_EYE,2);
+        ItemStack enderEye = new ItemStack(Items.ENDER_EYE, 2);
 
         ItemStack thirdInput = MoreCapacitorConfig.legacyRecipeSupport ? reinforcedObsidianBlock : doubleCompressedInfinityDustBlock;
 
@@ -25,10 +25,10 @@ public class RecipeSingularityAlloyIngot {
                 new RecipeInput(enderEye, true),
                 new RecipeInput(ingotStellar, true),
 //                new RecipeInput(doubleCompressedInfinityDustBlock, true)
-                new RecipeInput(thirdInput,true)
+                new RecipeInput(thirdInput, true)
         );
 
-        ItemStack outputItem = new ItemStack(MoreCapacitor.SINGULARITY_ALLOY_INGOT,1);
+        ItemStack outputItem = new ItemStack(MoreCapacitor.SINGULARITY_ALLOY_INGOT, 1);
 
         AlloyRecipeManager.getInstance().addRecipe(
                 true,

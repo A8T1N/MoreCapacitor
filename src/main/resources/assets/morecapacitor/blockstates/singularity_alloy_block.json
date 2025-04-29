@@ -1,5 +1,7 @@
 {
   "variants": {
-    "normal": { "model": "morecapacitor:singularity_alloy_block" }
+    "normal": {
+      "model": "morecapacitor:singularity_alloy_block"
+    }
   }
 }

@@ -6,7 +6,10 @@
     "III"
   ],
   "key": {
-    "I": { "type": "forge:ore_dict", "ore": "ingotSingularityAlloy" }
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSingularityAlloy"
+    }
   },
   "result": {
     "item": "morecapacitor:singularity_alloy_block"

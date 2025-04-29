@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class BlockSingularityAlloy extends Block {
-    public BlockSingularityAlloy(){
+    public BlockSingularityAlloy() {
         super(Material.IRON);
         this.setHardness(50.0f);
         this.setResistance(6000);

@@ -6,7 +6,10 @@
     " S "
   ],
   "key": {
-    "S": { "type": "forge:ore_dict", "ore": "ingotSingularityAlloy" }
+    "S": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSingularityAlloy"
+    }
   },
   "result": {
     "item": "morecapacitor:singularity_alloy_ball",
