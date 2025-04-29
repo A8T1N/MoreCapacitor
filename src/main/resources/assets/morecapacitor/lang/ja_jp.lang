@@ -7,4 +7,8 @@ item.morecapacitor.singularity_alloy_ball.name=シンギュラリティ合金の
 
 tile.morecapacitor.singularity_alloy_block.tooltip=ビーコンの基礎として使用可能。
 jei.morecapacitor.singularity_alloy_block.info=§f§lシンギュラリティ合金ブロック\n\nビーコンの基礎として使用可能。
-
+jei.morecapacitor.singularity_alloy_ball.info=§f§lシンギュラリティ合金の粉砕用ボール
+jei.morecapacitor.singularity_alloy_ball.info1=\n§9準自生粉砕機の粉砕用ボール
+jei.morecapacitor.singularity_alloy_ball.info2=§7出力：300％
+jei.morecapacitor.singularity_alloy_ball.info3=§7副産出力：300％
+jei.morecapacitor.singularity_alloy_ball.info4=§7消費電力：130％

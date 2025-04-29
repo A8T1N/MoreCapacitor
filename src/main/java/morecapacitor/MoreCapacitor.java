@@ -1,7 +1,7 @@
 package morecapacitor;
 
 import morecapacitor.ball.IMCHandler;
-import morecapacitor.ball.ItemGrindingBallSingularity;
+import morecapacitor.ball.ItemSingularityGrindingBall;
 import morecapacitor.block.BlockSingularityAlloy;
 import morecapacitor.capacitor.ItemCreativeCapacitor;
 import morecapacitor.capacitor.ItemSingularityCapacitor;
@@ -46,7 +46,7 @@ public class MoreCapacitor {
     public static final Block SINGULARITY_ALLOY_BLOCK = new BlockSingularityAlloy();
     public static final Item ITEM_SINGULARITY_ALLOY_BLOCK = new ItemBlock(SINGULARITY_ALLOY_BLOCK).setRegistryName(SINGULARITY_ALLOY_BLOCK.getRegistryName());
     public static final Item CREATIVE_CAPACITOR = new ItemCreativeCapacitor();
-    public static final Item SINGULARITY_ALLOY_BALL = new ItemGrindingBallSingularity();
+    public static final Item SINGULARITY_ALLOY_BALL = new ItemSingularityGrindingBall();
 
 
     public static void registerItem(Item item, String name, IForgeRegistry<Item> registry) {
