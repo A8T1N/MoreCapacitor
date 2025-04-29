@@ -10,7 +10,7 @@ jei.morecapacitor.singularity_alloy_block.info=§f§lSingularity Alloy Block\n\n
 
 jei.morecapacitor.singularity_alloy_ball.info=§f§lSingularity Alloy Grinding Ball
 jei.morecapacitor.singularity_alloy_ball.info1=\n§9SAG Mill Grinding Ball
-jei.morecapacitor.singularity_alloy_ball.info2=§7Main Output 300%
-jei.morecapacitor.singularity_alloy_ball.info3=§7Bonus Output 300%
-jei.morecapacitor.singularity_alloy_ball.info4=§7Power Use 130%
+jei.morecapacitor.singularity_alloy_ball.info2=§7Main Output %s%%
+jei.morecapacitor.singularity_alloy_ball.info3=§7Bonus Output %s%%
+jei.morecapacitor.singularity_alloy_ball.info4=§7Power Use %s%%
 

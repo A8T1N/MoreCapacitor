@@ -16,9 +16,9 @@ public class ItemSingularityGrindingBallInfo implements IModPlugin {
                 ItemStack.class,
                 "jei.morecapacitor.singularity_alloy_ball.info",
                 "jei.morecapacitor.singularity_alloy_ball.info1",
-                "jei.morecapacitor.singularity_alloy_ball.info2",
-                "jei.morecapacitor.singularity_alloy_ball.info3",
-                "jei.morecapacitor.singularity_alloy_ball.info4"
+                net.minecraft.client.resources.I18n.format("jei.morecapacitor.singularity_alloy_ball.info2", 350),
+                net.minecraft.client.resources.I18n.format("jei.morecapacitor.singularity_alloy_ball.info3", 325),
+                net.minecraft.client.resources.I18n.format("jei.morecapacitor.singularity_alloy_ball.info4", 130)
         );
     }
 }
